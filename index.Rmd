@@ -79,7 +79,8 @@ skills <- tribble(
   "Python",             4,
   "Bash",               4,
   "SQL",                4,
-  "Rust",               2,
+  "Git",                4,
+  "Rust",               1,
 )
 
 build_skill_bars(skills)
