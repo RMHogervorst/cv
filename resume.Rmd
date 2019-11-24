@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Roel M. Hogervorst's Resume"
+author: Roel Hogervorst
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -47,18 +47,18 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![face](roel-linkedin.jpg){width=100%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> hogervorst.rm@gmail.com
+- <i class="fa fa-twitter"></i> RoelMHogervorst
+- <i class="fa fa-github"></i> github.com/rmhogervorst
+- <i class="fa fa-link"></i> [rmhogervorst.nl](https://rmhogervorst.nl/)
+- <i class="fa fa-phone"></i> (+31) 627 527 923
 
 
 
@@ -70,12 +70,10 @@ Language Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "Javascript (d3.js)", 4.5,
   "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
+  "Bash",               4,
+  "SQL",                4,
+  "Rust",               2,
 )
 build_skill_bars(skills)
 ```
@@ -85,28 +83,20 @@ build_skill_bars(skills)
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/nstrayer/<name>`
+- `TidyRabbit`: [Github](https://github.com/rsangole/tidyrabbit)
+- `Badgecreatr`: [CRAN](https://cran.r-project.org/package=badgecreatr) R package to add badges to your readme
+- `nstrain`  [CRAN](https://cran.r-project.org/package=nsapi) A connection to the Dutch Rail way apis. 
+- `powrballad` [Github](https://github.com/Raoke/powrballad) choose your powerballad
+- `gephi` [Github](https://github.com/RMHogervorst/gephi) reformatting for your R igraph files for the gephi network visualisation tool. 
 
-
-- `shinysense`: R package to use sensor data in Shiny apps
-- `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
-- `slid3r`: D3 add-on for fully svg slider inputs
 
 
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+See full CV at rmhogervorst.nl/cv for more complete list of positions.
 
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
-
-Source code: [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
-
-Last updated on `r Sys.Date()`.
+ 
 
 
 
@@ -114,28 +104,18 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Roel M. Hogervorst {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
-
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+intro_text <- "I'm a maker. And I love creating tools that people find useful.
+I blog at [Roel's R-tefacts](https://blog.rmhogervorst.nl/) about for instance 
+[text as a graph](https://blog.rmhogervorst.nl/blog/2018/07/24/arthur-blinked-ford-shrugs-displaying-words-as-graph/), productionizing r products such as [logging in shiny server](https://blog.rmhogervorst.nl/blog/2018/02/28/adding-json-logging-to-shiny-app/), setting up a [version controlled server](https://blog.rmhogervorst.nl/blog/2018/02/06/setting-up-a-version-controlled-shiny-server/) and small explorations such as [where to live in the Netherlands for the best temperature](https://blog.rmhogervorst.nl/blog/2017/11/20/xkcd-the-netherlands-weather/).
 "
 
 
 cat(sanitize_links(intro_text))
 ```
-
-
-
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('education')
-```
-
 
 
 Selected Positions {data-icon=suitcase}
@@ -151,6 +131,15 @@ Selected Writing {data-icon=newspaper}
 
 ```{r}
 position_data %>% print_section('writings')
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
 ```
 
 
